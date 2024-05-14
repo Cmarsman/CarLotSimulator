@@ -9,7 +9,10 @@ namespace CarLotSimulator
         {
             var carLotOne = new CarLot();
 
+            Console.WriteLine($"Current number of cars in the car lot: {CarLot.numberOfCars}");
+
             var carOne = new Car();
+            Console.WriteLine($"Current number of cars in the car lot: {CarLot.numberOfCars}");
 
             carOne.Make = "Chrysler";
             carOne.Model = "Thunderbolt Roadster";
@@ -31,12 +34,14 @@ namespace CarLotSimulator
 
                 
             };
+            Console.WriteLine($"Current number of cars in the car lot: {CarLot.numberOfCars}");
 
             carLotOne.ParkingLot.Add(carTwo);
 
 
             var carThree = new Car(2021, "Toyota", "Camry", "vroom", "honk", false);
-            
+            Console.WriteLine($"Current number of cars in the car lot: {CarLot.numberOfCars}");
+
             carLotOne.ParkingLot.Add(carThree);
 
             carLotOne.CheckCars();
